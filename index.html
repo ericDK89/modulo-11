@@ -3,46 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modulo 11</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portal de notícias</title>
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <div class="container">
         <h1>EBAC News</h1>
 
-        <nav>
-          <ul class="nav-list">
-            <li>
-              Esportes
-              <ul class="submenu">
-                <li>Futebol</li>
-                <li>Basquete</li>
-                <li>Formula 1</li>
-              </ul>
-            </li>
-
-            <li>
-              Economia
-              <ul class="submenu">
-                <li>Bolsa de valores</li>
-                <li>Impostos</li>
-                <li>Muito dinheiro</li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <form class="header-form">
+          <input
+            type="text"
+            placeholder="Busque no site"
+            name="search"
+            id="search"
+          />
+          <button type="submit">Pesquisar</button>
+        </form>
       </div>
 
-      <form class="header-form">
-        <input
-          type="text"
-          placeholder="Busque no site"
-          name="search"
-          id="search"
-        />
-        <button type="submit">Pesquisar</button>
-      </form>
+      <nav>
+        <ul class="nav-list">
+          <li class="sports">
+            Esportes
+            <ul class="submenu">
+              <li><a href="#">Futebol</a></li>
+              <li><a href="#">Basquete</a></li>
+              <li><a href="#">Formula 1</a></li>
+            </ul>
+          </li>
+
+          <li class="economy">
+            Economia
+            <ul class="submenu">
+              <li><a href="#">Bolsa de valores</a></li>
+              <li><a href="#">Imposto de renda</a></li>
+              <li><a href="#">Finanças pessoais</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
     </header>
   </body>
 </html>
