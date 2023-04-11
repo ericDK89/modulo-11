@@ -40,6 +40,10 @@ header button {
   padding: 0.25rem;
 }
 
+.open-menu {
+  display: none;
+}
+
 .nav-list > li {
   float: left;
   padding: 1rem;
@@ -112,4 +116,78 @@ h2 {
 
 aside img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  header form button,
+  header form input {
+    margin-bottom: 0.5rem;
+  }
+
+  .open-menu {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .nav-list {
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submenu {
+    display: block;
+    width: 100%;
+    border: none;
+    position: static;
+  }
+
+  .nav-list > li {
+    clear: both;
+  }
+
+  .nav-list > li:hover {
+    border-color: transparent;
+  }
+
+  .main-container {
+    display: block;
+  }
+
+  #emphasis-section article {
+    display: block;
+    max-width: 300px;
+  }
+
+  #emphasis-section article p {
+    font-size: 1.5rem;
+  }
+
+  #last-news > div {
+    display: block;
+  }
+
+  #last-news > div article {
+    margin-bottom: 2rem;
+  }
 }

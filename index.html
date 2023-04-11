@@ -29,28 +29,32 @@
         </form>
       </div>
 
-      <nav class="container">
-        <ul class="nav-list">
-          <li class="sports">
-            Esportes
-            <ul class="submenu">
-              <li><a href="#">Futebol</a></li>
-              <li><a href="#">Basquete</a></li>
-              <li><a href="#">Formula 1</a></li>
-            </ul>
-          </li>
+      <button type="button" class="open-menu">Abrir menu</button>
 
-          <li class="economy">
-            Economia
-            <ul class="submenu">
-              <li><a href="#">Bolsa de valores</a></li>
-              <li><a href="#">Imposto de renda</a></li>
-              <li><a href="#">Finanças pessoais</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="clear"></div>
-      </nav>
+      <div id="nav-container" class="nav-container">
+        <nav class="container">
+          <ul class="nav-list">
+            <li class="sports">
+              Esportes
+              <ul class="submenu">
+                <li><a href="#">Futebol</a></li>
+                <li><a href="#">Basquete</a></li>
+                <li><a href="#">Formula 1</a></li>
+              </ul>
+            </li>
+
+            <li class="economy">
+              Economia
+              <ul class="submenu">
+                <li><a href="#">Bolsa de valores</a></li>
+                <li><a href="#">Imposto de renda</a></li>
+                <li><a href="#">Finanças pessoais</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </nav>
+      </div>
     </header>
 
     <div class="container main-container">
@@ -142,5 +146,8 @@
         </article>
       </aside>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
