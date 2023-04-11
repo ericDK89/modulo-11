@@ -35,6 +35,11 @@ header {
   border-bottom: 1px solid #ccc;
 }
 
+header input,
+header button {
+  padding: 0.25rem;
+}
+
 .nav-list > li {
   float: left;
   padding: 1rem;
@@ -56,6 +61,7 @@ header {
   top: 100%;
   left: 0;
   width: 150px;
+  background-color: #fff;
   border: 1px solid red;
 }
 
@@ -66,4 +72,44 @@ header {
 
 .clear {
   clear: both;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+#emphasis-section article {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#emphasis-section article p {
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  gap: calc(100% - (70% + 25%));
+}
+
+#last-news > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 2rem;
+}
+
+#last-news img {
+  max-width: 100%;
+}
+
+#aside-news article {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+aside img {
+  max-width: 100%;
 }
